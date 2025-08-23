@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Welcome to Vasco De Gama Survey Form</h1>
+      <p id="description">Thanks &#96;my Friend&#96; for taking time to give feedback , it helps a lot to improve our service!
+      </p>
+    </header>
+    <main>
+      <form action="" method="POST"  id="survey-form">
+        <label for="name" id="name-label" >Nick Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter name" required/>
+
+        <label for="email" id="email-label" >Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter Email" required/>
+
+        <label for="number" id="number-label" >Age</label>
+        <input id="number" type="number" name="number" min="18" max="99" placeholder="Age" required/>
+        
+        <p>Rate our Teaching Style</p>
+        <select id="dropdown">
+          <option value="poor">Poor</option>
+          <option value="average">Average</option>
+          <option selcted value="good">Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+
+        <p>Will you share about FreeCodecamp to  your friend?</p>
+        <input id="sure" checked type="radio" name="share" value="Sure!"/>
+        <label for="sure">Sure!</label>
+        <input id="maybe" type="radio" name="share" value="maybe" />
+        <label for="maybe">MayBe</label>
+        <input id="no" type="radio" name="share" value="no" />
+        <label for="no">No</label>
+
+        <p>Which courses you Choosen?</p>
+        <input id="ai" type="checkbox" name="courses-choosen" value="ai" />
+        <label for="ai">AI</label>
+        <input id="front-end" type="checkbox" name="courses-choosen" value="front-end" />
+        <label for="front-end">Front End</label>
+        <input id="database" type="checkbox" name="courses-choosen" value="database" />
+        <label for="datbase">Database</label>
+        <input id="back-end" type="checkbox" name="courses-choosen" value="back-end" />
+        <label for="back-end">Back End</label>
+        <input id="full-stack" type="checkbox" name="courses-choosen" value="full-stack" />
+        <label for="full-stack">Full Stack</label>
+        <input id="cyber-security" type="checkbox" name="courses-choosen" value="cyber-security" />
+        <label for="cyber-security">Cyber Security</label>
+
+        <p>Any Suggestions from you</p>
+        <textarea placeholder="write your opinion" rows="8" cols="20"></textarea><br/>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
