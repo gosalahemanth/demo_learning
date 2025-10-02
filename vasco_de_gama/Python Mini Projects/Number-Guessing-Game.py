@@ -1,4 +1,7 @@
 import random
+
+from reportlab.lib.randomtext import PRINTING
+
 secret_number = random.randint(1,100)
 count = 0
 while True:
@@ -15,3 +18,4 @@ while True:
             break
     except ValueError:
         print("Invalid Input:Give Numbers only")
+print("Thanks for Game!")
